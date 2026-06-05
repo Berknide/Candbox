@@ -1,0 +1,60 @@
+﻿<Window x:Class="Candbox.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Candbox"
+        mc:Ignorable="d"
+        Title="SettingsWindow" Height="550" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="WhiteSmoke" Margin="0,0,0,0" MinHeight="550" MinWidth="800">
+        <ToolBarPanel Margin="99,10,99,0" Background="#99C2DFF5" Height="244" VerticalAlignment="Top">
+            <ToolBarPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Margin" Value="0,20,0,0"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="1" 
+                                CornerRadius="5"
+                                Padding="5,2">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ToolBarPanel.Resources>
+            <Button x:Name="ButtonBack" Content="Назад" Height="26" Width="97" Background="#99C2DFF5" BorderBrush="#999C95ED" Click="ButtonBack_Click" MouseMove="ButtonBack_MouseMove" MouseLeave="ButtonBack_MouseLeave" TabIndex="1" FontFamily="Century Gothic" FontSize="14"/>
+
+            <Button x:Name="ButtonTheme" Content="Тема" Height="35" Width="190" Background="#99C2DFF5" BorderBrush="#999C95ED" Click="ButtonTheme_Click" MouseMove="ButtonTheme_MouseMove" MouseLeave="ButtonTheme_MouseLeave" TabIndex="2" FontFamily="Century Gothic" FontSize="14"/>
+            <Button x:Name="ButtonFont" Content="Шрифт" Height="35" Width="190" Background="#99C2DFF5" BorderBrush="#999C95ED" Click="ButtonFont_Click" MouseMove="ButtonFont_MouseMove" MouseLeave="ButtonFont_MouseLeave" TabIndex="3" FontFamily="Century Gothic" FontSize="14"/>
+            <Button x:Name="ButtonLanguage" Content="Язык" Height="35" Width="190" Background="#99C2DFF5" BorderBrush="#999C95ED" Click="ButtonLanguage_Click" MouseMove="ButtonLanguage_MouseMove" MouseLeave="ButtonLanguage_MouseLeave" TabIndex="4" FontFamily="Century Gothic" FontSize="14"/>
+        </ToolBarPanel>
+        <ToolBarPanel Margin="99,272,99,0" Background="#99C2DFF5" Height="227" VerticalAlignment="Top">
+            <ToolBarPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="0,30,0,0"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" 
+                                    BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="1" 
+                                    CornerRadius="5"
+                                    Padding="5,2">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ToolBarPanel.Resources>
+            <Button x:Name="ButtonReset" Content="Сброс" Height="35" Width="190" Background="#99C2DFF5" BorderBrush="#999C95ED" Click="ButtonReset_Click" MouseMove="ButtonReset_MouseMove" MouseLeave="ButtonReset_MouseLeave" TabIndex="5" FontFamily="Century Gothic" FontSize="14"/>
+            <Button x:Name="ButtonLogout" Content="Выход из системы" Height="35" Width="190" Background="#99C2DFF5" BorderBrush="#999C95ED" Click="ButtonLogout_Click" MouseMove="ButtonLogout_MouseMove" MouseLeave="ButtonLogout_MouseLeave" TabIndex="6" FontFamily="Century Gothic" FontSize="14"/>
+            <Button x:Name="ButtonExit" Content="Выход" Height="35" Width="190" Background="#99C2DFF5" BorderBrush="#999C95ED" Click="ButtonExit_Click" MouseMove="ButtonExit_MouseMove" MouseLeave="ButtonExit_MouseLeave" TabIndex="7" FontFamily="Century Gothic" FontSize="14"/>
+        </ToolBarPanel>
+
+    </Grid>
+</Window>

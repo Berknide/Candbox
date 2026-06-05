@@ -1,0 +1,15 @@
+﻿<Window x:Class="Candbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Candbox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="LabelName" Content="Candbox" HorizontalAlignment="Center" Margin="0,56,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Century Gothic"/>
+        <Button x:Name="ButtonPlay" Height="35" Width="190" Content="Играть" Style="{StaticResource BaseButtonStyle}" HorizontalAlignment="Center" Margin="0,245,0,0" VerticalAlignment="Top" Click="ButtonPlay_Click"/>
+        <Button x:Name="ButtonSettings" Height="35" Width="190" Content="Настройки" Style="{StaticResource BaseButtonStyle}" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Click="ButtonSettings_Click"/>
+        <Button x:Name="ButtonExit" Height="35" Width="190" Content="Выход" Style="{StaticResource BaseButtonStyle}" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Click="ButtonExit_Click"/>
+    </Grid>
+</Window>
